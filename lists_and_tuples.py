@@ -237,3 +237,59 @@
 # print(color)
 # color.remove("red")
 # print(color)
+
+############################################################################################
+####################### tuples##################################################
+
+# mytuple = ("apple", "banana", "mango")
+# print(mytuple)
+# print(len(mytuple))
+# print(type(mytuple))
+
+
+# thistuple = ("apple",)
+# print(type(thistuple))
+
+# thistuple = tuple(("apple", "banana"))
+# print(thistuple)
+# print(thistuple[1])
+
+
+# thistuple = ("apple", "banana", "cherry")
+# y = list(thistuple)
+# y.append("mango")
+
+# thistuple = tuple(y)
+# print(thistuple)
+
+# thistuple = ("apple", "banana", "cherry")
+# y = ("orange",)
+
+# thistuple += y
+# print(thistuple)
+
+# fruits = ("apple", "banana", "cherry")
+
+# green, yelow, red = fruits
+# print(green)
+# print(yelow)
+# print(red)
+
+# fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+
+# green, *yelow, red = fruits
+
+# print(green)
+# print(yelow)
+# print(red)
+
+# tuple1 = ("a", "b", "c")
+# tuple2 = (1, 2, 3)
+
+# tuple3 = tuple1 + tuple2
+# print(tuple3)
+
+
+# fruits = ("apple", "banana", "cherry")
+# fruits = fruits * 2
+# print(fruits)
