@@ -257,15 +257,288 @@
 # print(calc.add(1, 4))
 # print(calc.multiply(1, 4))
 
-class Person:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+# class Person:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
 
-    def get_info(self):
-        return f"{self.name} is {self.age} years old"
+#     def get_info(self):
+#         return f"{self.name} is {self.age} years old"
 
 
-p1 = Person("saba", 23)
+# p1 = Person("saba", 23)
 
-print(p1.get_info())
+# print(p1.get_info())
+
+# class Person:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+
+#     def celebrate_birthday(self):
+#         self.age += 1
+#         print(f"happy birthday! you are now {self.age}")
+
+
+# p1 = Person("saba", 22)
+# p1.celebrate_birthday()
+# p1.celebrate_birthday()
+
+
+# class Person:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+
+
+# p1 = Person("saba", 45)
+# print(p1)
+
+
+# class Person:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+
+#     def __str__(self):
+#         return f"{self.name} ({self.age})"
+
+
+# p1 = Person("lana", 45)
+# print(p1)
+
+
+# class Playlist:
+#     def __init__(self, name):
+#         self.name = name
+#         self.songs = []
+
+#     def add_song(self, song):
+#         self.songs.append(song)
+#         print(f"Added: {song}")
+
+#     def remove_song(self, song):
+#         if song in self.songs:
+#             self.songs.remove(song)
+#             print(f"removed: {song}")
+
+#     def show_songs(self):
+#         print(f"Playlist: {self.name}")
+#         for song in self.songs:
+#             print(f"- {song}")
+
+
+# my_playlist = Playlist("eminem")
+# my_playlist.add_song("rap god")
+# my_playlist.add_song("godzila")
+# my_playlist.show_songs()
+# my_playlist.remove_song("rap god")
+# my_playlist.show_songs()
+
+
+# class Person:
+#     def __init__(self, name):
+#         self.name = name
+
+#     def greet(self):
+#         print("hello")
+
+
+# p1 = Person("emily")
+
+# del Person.greet
+
+# p1.greet()
+
+
+##########################################################
+########### inheritance####################################
+
+# class Person:
+#     def __init__(self, fname, lname):
+#         self.fname = fname
+#         self.lname = lname
+
+#     def printname(self):
+#         print(self.fname, self.lname)
+
+
+# class Student(Person):
+#     pass
+
+
+# x = Person("alexa", "shanava")
+# x.printname()
+
+# y = Student("saba", "kvaratskhelia")
+# y.printname()
+
+
+# class Person:
+#     def __init__(self, fname, lname):
+#         self.firstname = fname
+#         self.lastname = lname
+
+#     def printname(self):
+#         print(self.firstname, self.lastname)
+
+
+# class Student(Person):
+#     def __init__(self, fname, lname):
+#         Person.__init__(self, fname, lname)
+
+#     def mult(self):
+#         print(self.firstname * 2)
+
+
+# x = Student("Mike", "Olsen")
+# x.printname()
+# x.mult()
+
+
+# class Person():
+#     def __init__(self, fname, lname):
+#         self.firstname = fname
+#         self.lastname = lname
+
+#     def printname(self):
+#         print(self.firstname, self.lastname)
+
+
+# class Student(Person):
+#     def __init__(self, fname, lname):
+#         super().__init__(fname, lname)
+
+
+# x = Student("Mike", "Olsen")
+# x.printname()
+
+# class Person:
+#     def __init__(self, fname, lname):
+#         self.firstname = fname
+#         self.lastname = lname
+
+#     def printname(self):
+#         print(self.firstname, self.lastname)
+
+
+# class Student(Person):
+#     def __init__(self, fname, lname):
+#         super().__init__(fname, lname)
+#         self.graduationyear = 2025
+
+
+# x = Student("saba", "okropiridze")
+# print(x.graduationyear)
+
+
+# class Person:
+#     def __init__(self, fname, lname):
+#         self.firstname = fname
+#         self.lastname = lname
+
+#     def printname(self):
+#         print(self.firstname, self.lastname)
+
+
+# class Student(Person):
+#     def __init__(self, fname, lname, year):
+#         super().__init__(fname, lname)
+#         self.graduationyear = year
+
+
+# x = Student("lasa", "kankava", 2024)
+# print(x.graduationyear)
+
+
+# class Person:
+#     def __init__(self, fname, lname):
+#         self.firstname = fname
+#         self.lastname = lname
+
+#     def printname(self):
+#         print(self.firstname, self.lastname)
+
+
+# class Student(Person):
+#     def __init__(self, fname, lname, year):
+#         super().__init__(fname, lname)
+#         self.graduationyear = year
+
+#     def welcome(self):
+#         print(
+#             f"Welcome {self.firstname} {self.lastname} to the class of {self.graduationyear}")
+
+
+# x = Student("saba", "axalaia", 2021)
+# x.welcome()
+
+####################### polimorphism#########################
+
+
+# class Car:
+#     def __init__(self, brand, model):
+#         self.brand = brand
+#         self.model = model
+
+#     def move(self):
+#         print("Drive")
+
+
+# class Boat:
+#     def __init__(self, brand, model):
+#         self.brand = brand
+#         self.model = model
+
+#     def move(self):
+#         print("Sail")
+
+
+# class Plane:
+#     def __init__(self, brand, model):
+#         self.brand = brand
+#         self.model = model
+
+#     def move(self):
+#         print("Fly!")
+
+
+# car1 = Car("ford", "mustang")
+# boat1 = Boat("ibiza", "touring 20")
+# plane1 = Plane("boeing", "747")
+
+# for x in (car1, boat1, plane1):
+#     x.move()
+
+
+# class Vehicle:
+#     def __init__(self, brand, model):
+#         self.brand = brand
+#         self.model = model
+
+#     def move(self):
+#         print("Move!!")
+
+
+# class Car(Vehicle):
+#     pass
+
+
+# class Boat(Vehicle):
+#     def move(self):
+#         print("Sail!")
+
+
+# class Plane(Vehicle):
+#     def move(self):
+#         print("Fly!")
+
+
+# car1 = Car("ford", "mustang")
+# boat1 = Boat("ibiza", "touring 20")
+# plane1 = Plane("boeing", "747")
+
+# for x in (car1, boat1, plane1):
+#     print(x.brand)
+#     print(x.model)
+#     x.move()
